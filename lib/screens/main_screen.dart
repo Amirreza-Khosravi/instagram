@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:instagram/screens/activity_screen.dart';
 import 'package:instagram/screens/add_content_screen.dart';
 import 'package:instagram/screens/home_screen.dart';
-import 'package:instagram/screens/me_profile.dart';
+import 'package:instagram/screens/profile_screen.dart';
 import 'package:instagram/screens/search_screen.dart';
 import 'package:instagram/screens/user_profile_screen.dart';
 
@@ -133,7 +133,7 @@ class _MainScreenState extends State<MainScreen> {
       SearchScreen(),
       AddContent(),
       Activity(),
-      MeProfile(),
+      ProfileScreen(),
       UserProfile(),
     ];
   }

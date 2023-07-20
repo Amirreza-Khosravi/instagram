@@ -72,7 +72,7 @@ class _ActivityState extends State<Activity>
         ),
         SliverList(
           delegate: SliverChildBuilderDelegate(((context, index) {
-            return _getRow(ActivityStatus.follow);
+            return _getRow(ActivityStatus.following);
           }), childCount: 2),
         ),
         SliverToBoxAdapter(
@@ -87,12 +87,12 @@ class _ActivityState extends State<Activity>
         ),
         SliverList(
           delegate: SliverChildBuilderDelegate(((context, index) {
-            return _getRow(ActivityStatus.like);
+            return _getRow(ActivityStatus.lkies);
           }), childCount: 5),
         ),
         SliverList(
           delegate: SliverChildBuilderDelegate(((context, index) {
-            return _getRow(ActivityStatus.massage);
+            return _getRow(ActivityStatus.followBack);
           }), childCount: 4),
         ),
       ],
@@ -181,10 +181,10 @@ class _ActivityState extends State<Activity>
 
   Widget _getActionActivity(ActivityStatus status) {
     switch (status) {
-      case ActivityStatus.massage:
+      case ActivityStatus.lkies:
         return ElevatedButton(
           style: ElevatedButton.styleFrom(
-            primary: Color(0Xff1C1F2E),
+            backgroundColor: Color(0Xff1C1F2E),
             side: BorderSide(
               color: Color(0xffC5C5C5),
             ),
@@ -204,19 +204,19 @@ class _ActivityState extends State<Activity>
           ),
         );
 
-      case ActivityStatus.follow:
+      case ActivityStatus.following:
         return ElevatedButton(
           onPressed: () {},
           child: Text('Follow'),
           style: ElevatedButton.styleFrom(
-            primary: Color(0XffF35383),
+            backgroundColor: Color(0XffF35383),
             shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(6),
             ),
             textStyle: TextStyle(fontFamily: 'GB', fontSize: 12),
           ),
         );
-      case ActivityStatus.like:
+      case ActivityStatus.lkies:
         return SizedBox(
           width: 40,
           height: 40,

@@ -1,5 +1,5 @@
 enum ActivityStatus {
-  massage,
-  follow,
-  like,
+  following,
+  lkies,
+  followBack,
 }

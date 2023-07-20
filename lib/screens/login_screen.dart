@@ -171,7 +171,7 @@ class _LoginScreenState extends State<LoginScreen> {
                       height: 40,
                       child: ElevatedButton(
                         style: ElevatedButton.styleFrom(
-                          primary: Color(0xfff35383),
+                          backgroundColor: Color(0xfff35383),
                           shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(10),
                           ),
@@ -217,11 +217,4 @@ class _LoginScreenState extends State<LoginScreen> {
           )
         ],
       );
-
-  @override
-  void dispose() {
-    super.dispose();
-    focusInputeEmail.dispose();
-    focusInputePassword.dispose();
-  }
 }

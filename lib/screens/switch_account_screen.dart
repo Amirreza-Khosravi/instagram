@@ -55,7 +55,7 @@ class SwitchAccountScreen extends StatelessWidget {
                             SizedBox(height: 20),
                             Text(
                               'AmirrezaKhosravi',
-                              style: Theme.of(context).textTheme.headline4,
+                              style: Theme.of(context).textTheme.headlineMedium,
                             ),
                             SizedBox(height: 20),
                             SizedBox(
@@ -76,14 +76,16 @@ class SwitchAccountScreen extends StatelessWidget {
                                 },
                                 child: Text(
                                   'Confirm',
-                                  style: Theme.of(context).textTheme.headline4,
+                                  style: Theme.of(context)
+                                      .textTheme
+                                      .headlineMedium,
                                 ),
                               ),
                             ),
                             SizedBox(height: 32),
                             Text(
                               'switch account',
-                              style: Theme.of(context).textTheme.headline4,
+                              style: Theme.of(context).textTheme.headlineMedium,
                             ),
                             SizedBox(height: 32),
                           ],
@@ -96,25 +98,26 @@ class SwitchAccountScreen extends StatelessWidget {
             ),
           ),
           Padding(
-              padding: EdgeInsets.only(top: 132, bottom: 32),
-              child: Row(
-                mainAxisSize: MainAxisSize.max,
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Text(
-                    'Don\'t have an account? / ',
-                    style: TextStyle(
-                        color: Color(0xff80FFFFFF),
-                        fontSize: 16,
-                        fontFamily: 'GB'),
-                  ),
-                  Text(
-                    'Sign up',
-                    style: TextStyle(
-                        color: Colors.white, fontSize: 16, fontFamily: 'GB'),
-                  ),
-                ],
-              ))
+            padding: EdgeInsets.only(top: 132, bottom: 32),
+            child: Row(
+              mainAxisSize: MainAxisSize.max,
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Text(
+                  'Don\'t have an account? / ',
+                  style: TextStyle(
+                      color: Color(0xff80FFFFFF),
+                      fontSize: 16,
+                      fontFamily: 'GB'),
+                ),
+                Text(
+                  'Sign up',
+                  style: TextStyle(
+                      color: Colors.white, fontSize: 16, fontFamily: 'GB'),
+                ),
+              ],
+            ),
+          )
         ],
       ),
     );

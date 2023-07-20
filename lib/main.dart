@@ -14,12 +14,12 @@ class Application extends StatelessWidget {
     return MaterialApp(
       theme: ThemeData(
         textTheme: TextTheme(
-          headline4:
+          headlineMedium:
               TextStyle(fontFamily: 'GB', fontSize: 16, color: Colors.white),
         ),
         elevatedButtonTheme: ElevatedButtonThemeData(
           style: ElevatedButton.styleFrom(
-            primary: Color(0XffF35383),
+            backgroundColor: Color(0XffF35383),
             shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(15),
             ),
