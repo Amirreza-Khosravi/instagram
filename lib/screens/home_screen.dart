@@ -1,7 +1,7 @@
 import 'dart:ui';
 import 'package:dotted_border/dotted_border.dart';
 import 'package:flutter/material.dart';
-import 'package:instagram/screens/share_buttonSheet.dart';
+import 'package:instagram/widgets/share_buttonSheet.dart';
 import 'package:instagram/screens/user_profile_screen.dart';
 
 class HomeScreen extends StatelessWidget {
