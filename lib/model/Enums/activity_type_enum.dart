@@ -1,5 +1,5 @@
 enum ActivityStatus {
   following,
-  lkies,
+  like,
   followBack,
 }
