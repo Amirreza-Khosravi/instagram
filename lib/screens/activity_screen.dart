@@ -87,7 +87,7 @@ class _ActivityState extends State<Activity>
         ),
         SliverList(
           delegate: SliverChildBuilderDelegate(((context, index) {
-            return _getRow(ActivityStatus.lkies);
+            return _getRow(ActivityStatus.like);
           }), childCount: 5),
         ),
         SliverList(
@@ -181,7 +181,7 @@ class _ActivityState extends State<Activity>
 
   Widget _getActionActivity(ActivityStatus status) {
     switch (status) {
-      case ActivityStatus.lkies:
+      case ActivityStatus.like:
         return ElevatedButton(
           style: ElevatedButton.styleFrom(
             backgroundColor: Color(0Xff1C1F2E),
@@ -216,7 +216,7 @@ class _ActivityState extends State<Activity>
             textStyle: TextStyle(fontFamily: 'GB', fontSize: 12),
           ),
         );
-      case ActivityStatus.lkies:
+      case ActivityStatus.like:
         return SizedBox(
           width: 40,
           height: 40,
