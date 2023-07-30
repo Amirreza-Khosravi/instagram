@@ -19,15 +19,13 @@ class HomeScreen extends StatelessWidget {
               child: _getStoryList(),
             ),
             SliverList(
-              delegate: SliverChildBuilderDelegate(
-                (context, index) {
-                  return Column(
-                    children: [
-                      _getPostList(),
-                    ],
-                  );
-                },
-              ),
+              delegate: SliverChildBuilderDelegate((context, index) {
+                return Column(
+                  children: [
+                    _getPostList(),
+                  ],
+                );
+              }, childCount: 1),
             ),
           ],
         ),
@@ -50,7 +48,7 @@ class HomeScreen extends StatelessWidget {
     return ListView.builder(
       physics: NeverScrollableScrollPhysics(),
       shrinkWrap: true,
-      itemCount: 9,
+      itemCount: 5,
       itemBuilder: (context, index) => _getPost(context, index),
     );
   }
@@ -67,9 +65,9 @@ class HomeScreen extends StatelessWidget {
   }
 
   List<String> _getPostCover() => [
-        "images/post_cover03.png",
-        "images/post_cover02.png",
-        "images/post_cover01.png",
+        "images/item7.png",
+        "images/item2.png",
+        "images/item9.png",
       ];
 
   Container _getBodyPost(BuildContext context, int index) {
@@ -212,7 +210,7 @@ class HomeScreen extends StatelessWidget {
               mainAxisSize: MainAxisSize.min,
               children: [
                 Text(
-                  "AmirAhmadAdibii",
+                  "AmirrezaKhosravi",
                   style: TextStyle(
                     color: Colors.white,
                     fontSize: 12,
@@ -220,7 +218,7 @@ class HomeScreen extends StatelessWidget {
                   ),
                 ),
                 Text(
-                  "امیراحمد برنامه‌نویس موبایل",
+                  "امیررضا برنامه‌نویس موبایل",
                   style: TextStyle(
                     color: Colors.white,
                     fontFamily: 'SM',
@@ -260,8 +258,8 @@ class HomeScreen extends StatelessWidget {
 
   List<String> _getDataFaceImage() {
     return [
-      "images/profile.png",
-      "images/profile.png",
+      "images/bottom02.png",
+      "images/bottom10.png",
       "images/bottom03.png",
       "images/bottom04.png",
       "images/bottom05.png",
@@ -278,7 +276,7 @@ class HomeScreen extends StatelessWidget {
   List<String> _getDataFaceName() {
     return [
       "Your Story",
-      "AmirAhmadAdibii",
+      "anjelica",
       "Sara.sma",
       "Mamali",
       "Flor.m",
@@ -347,7 +345,7 @@ class HomeScreen extends StatelessWidget {
           child: Container(
             height: 38,
             width: 38,
-            child: Image.asset('images/profile.png'),
+            child: Image.asset('images/bottom08.png'),
           ),
         ),
       ),
